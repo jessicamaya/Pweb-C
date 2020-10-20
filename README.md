@@ -1,2 +1,2 @@
-# Pweb-C
-Jessica Maya Berlianasari - 192410101030
+# web-project-c
+Repository for web project c
