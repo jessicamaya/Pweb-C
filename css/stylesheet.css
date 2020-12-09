@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --ungutua: #1E1B23;
+    --abu2: #CDCDCD;
+    --merahtua: #9D0F0D;
+    --abumuda: 	#E5E5E5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:visited {
+    color: white;
+}
+
+/* Header */
+
+.navbar {
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: var(--ungutua);
+    justify-content: space-between;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-kiri {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-kanan {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.navbar-logo {
+    background-image: url("../img/logoalgoin.png");
+    background-position: center;
+    background-size: cover;
+    width: 110px;
+    height: 50px;
+}
+
+.navbar-menu-list {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+li>a {
+    padding: 0px 10px;
+}
+
+.navbar-segitiga {
+    background-image: url('../img/navbar-triangle-down.png');
+    background-position: center;
+    background-size: cover;
+    width: 10px;
+    height: 7px;
+    margin-left: 10px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 15px 0px 15px 0px;
+    color: white;
+    width: 100%;
+    background-color: var(--ungutua);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.footer-logo {
+    background-image: url('../img/logoalgoin.png');
+    background-position: center;
+    background-size: cover;
+    width: 110px;
+    height: 50px;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-list {
+    list-style-type: none;
+    color: white;
+    margin: 0px 15px;
+}
+
+/* Halaman Utama */
+
+.halaman-utama-atas-bawah {
+    display: flex;
+}
+
+.halaman-utama-atas-bawah-kiri {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.halaman-utama-atas-bawah-kiri-judul {
+    font-weight: 700;
+    font-size: 40pt;
+}
+
+.halaman-utama-atas-bawah-kiri-text {
+    margin-top: 30px;
+    font-size: 15pt;
+}
+
+.halaman-utama-atas-bawah-kiri-tombol-container {
+    margin-top: 40px;
+}
+
+.halaman-utama-atas-bawah-kiri-tombol {
+    font-size: 18pt;
+    font-weight: 700;
+    border: 3px solid black;
+    padding: 15px 40px;
+    background-color: white;
+
+}
+
+.halaman-utama-atas-bawah-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 25pt;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.halaman-utama-tengah-container-utama {
+    display: flex;
+    justify-content: center;
+}
+
+.halaman-utama-tengah {
+    display: flex;
+}
+
+.halaman-utama-tengah-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    margin: 20px 30px;
+    padding: 5px 10px;
+}
+
+.halaman-utama-tengah-container-image {
+    margin: 20px 0px;
+}
+
+.halaman-utama-tengah-container-text {
+    font-size: 18pt;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.halaman-utama-bawah {
+    display: flex;
+    background-color: #CDCDCD;
+}
+
+.halaman-utama-atas-bawah-kiri-tulisan2 {
+    margin-top: 30px;
+    font-size: 15pt;
+    color: #707070;
+}
+
+.halaman-utama-gabung {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0; 
+}
+
+.halaman-utama-gabung-tulisan {
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+.halaman-utama-gabung-tombol {
+    border: 2px solid black;
+    background-color: #CDCDCD;
+    font-size: 15pt;
+    font-weight: 500;
+    padding: 20px 40px
+}
+
+.halaman-utama-gabung-tulisan2 {
+    margin: 30px 0;
+    font-size: 15pt;
+}
+
+/* Daftar Login */
+
+.cover {
+    display: none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.85);
+}
+
+.cover.show {
+    display: block;
+}
+
+.cover-verdict{
+    display: none;
+    border: 2px solid black;
+    position: fixed;
+    top:30px;
+    left: 37vw;
+    width:27%;
+    background-color:#ffffff;
+    opacity:1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.cover-verdict.show {
+    display: block;
+}
+
+.cover-container{
+    position: fixed;
+    top:90px;
+    left: 37vw;
+    width:27%;
+    background-color:#ffffff;
+    opacity:1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+
+.cover-container-title {
+    text-align: center;
+    font-size: 17pt;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cover-container-input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 55% 10px 1%;
+    background-color: #E8F0FE;
+    margin: 10px 0;
+}
+
+.cover-container-input :focus {
+    outline: none;
+    background-color: red;
+}
+
+.cover-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-container-tombol-login {
+    color: red;
+    font-weight: 600;
+    background-color: var(--abu2);
+    border: none;
+    padding: 8px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cover-container-lupa-password {
+    font-size: 10pt;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.nav-menu-utama {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--ungutua);
+}
+
+.nav-menu-utama-box {
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-utama-tombol-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-utama-tombol {
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15pt;
+    padding: 10px 20px;
+    background-color: var(--ungutua);
+    color: white;
+    cursor: pointer;
+}
+
+.nav-utama-tombol:focus {
+    outline: none;
+}
+
+.nav-utama-jarak {
+    padding: 0 20px;
+    
+}
+
+#nav-utama-tombol2 {
+    border: 1px solid grey;
+    background-color: var(--abu2);
+    color: black;
+}
